@@ -8,10 +8,35 @@ function convertToRoman(num) {
       5:['V', 5], 
       6:['I', 1]
     };
+	
 
   //your code here
+	switch (length) {
+
+		case 4:
+			roman = thousamds[numbers [i]];
+			i++;
+
+
+		case 3:
+			roman += hundreds[numbers[i]];
+			i++;
+
+		case 2:
+			roman += tens[numbers[i]];
+			i++;
+
+		case 1:
+			roman += singies[numbers[i]];
+			
+	
+							  
+	}
+	return roman;
+	
 
 }
+convertToRoman(36);
 // You can test your code by running the above function and printing it to console by pressing the run button at the top. To run it with input 36, uncomment the following line
 
 // console.log(convertToRoman(36));
